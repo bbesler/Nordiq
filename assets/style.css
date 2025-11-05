@@ -40,9 +40,19 @@ nav a:hover {
   color: var(--nordiq-accent);
 }
 
+/* Aktiver Menüpunkt */
+nav a.active {
+  color: var(--nordiq-accent);
+  border-bottom: 3px solid var(--nordiq-accent);
+  padding-bottom: 4px;
+}
+
+
 h1, h2 {
   color: var(--nordiq-blue);
 }
+
+
 
 section {
   max-width: 1000px;
