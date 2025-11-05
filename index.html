@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NordiQ Consulting – Klarheit aus dem Norden</title>
+  <style>
+    /* --- Grundstil im NordiQ-Look --- */
+    :root {
+      --nordiq-blue: #002b5c;
+      --nordiq-light: #e6ecf3;
+      --nordiq-accent: #0077b6;
+      --text-color: #222;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--nordiq-light);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--nordiq-blue);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem 3rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #dbe6f5;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    h2 {
+      color: var(--nordiq-blue);
+      margin-bottom: 1rem;
+      border-left: 5px solid var(--nordiq-accent);
+      padding-left: 10px;
+      font-size: 1.6rem;
+    }
+
+    .service-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    .service h3 {
+      color: var(--nordiq-accent);
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: var(--nordiq-blue);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: var(--nordiq-accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NordiQ Consulting</h1>
+    <p>Klarheit aus dem Norden</p>
+  </header>
+
+  <section>
+    <h2>Unsere Schwerpunkte</h2>
+    <div class="service-list">
+      <div class="service">
+        <h3>Maschinenbau</h3>
+        <p>Standardisierung, Modularisierung und Variantenmanagement für den Maschinenbau. 
+           Wir schaffen Struktur in Produktlandschaften und reduzieren Komplexität nachhaltig.</p>
+      </div>
+
+      <div class="service">
+        <h3>Prozesstechnik & Anlagenbau</h3>
+        <p>Strukturierte Modularisierung und Variantenmanagement für komplexe Anlagen. 
+           Effizienzsteigerung durch klare Standards und Schnittstellen.</p>
+      </div>
+
+      <div class="service">
+        <h3>KI-Systeme für Engineering & Struktur</h3>
+        <p>Entwicklung intelligenter KI-Systeme für Standardisierung, Modularisierung und Variantenmanagement 
+           in der Prozesstechnik – von der Datenanalyse bis zum Assistenzsystem.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Kontakt</h2>
+    <p>
+      Interesse an einer Zusammenarbeit?<br />
+      Schreiben Sie direkt an
+      <a href="mailto:benno-besler@outlook.com">benno-besler@outlook.com</a>.
+    </p>
+  </section>
+
+  <footer>
+    © 2025 NordiQ Consulting – Klarheit aus dem Norden<br />
+    <a href="mailto:benno-besler@outlook.com">Kontakt aufnehmen</a>
+  </footer>
+</body>
+</html>
