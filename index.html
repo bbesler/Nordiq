@@ -5,10 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NordiQ Consulting – Klarheit aus dem Norden</title>
   <style>
-    /* --- Grundstil im NordiQ-Look --- */
     :root {
       --nordiq-blue: #002b5c;
-      --nordiq-light: #e6ecf3;
+      --nordiq-light: #f4f7fa;
       --nordiq-accent: #0077b6;
       --text-color: #222;
     }
@@ -26,54 +25,66 @@
       line-height: 1.6;
     }
 
+    /* --- Header --- */
     header {
-      background: var(--nordiq-blue);
+      position: relative;
+      background: linear-gradient(rgba(0, 43, 92, 0.85), rgba(0, 43, 92, 0.85)),
+                  url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
       color: white;
       text-align: center;
-      padding: 4rem 1rem 3rem;
+      padding: 6rem 1rem 5rem;
+    }
+
+    header img.logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      height: 50px;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       font-weight: 700;
     }
 
     header p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       margin-top: 0.5rem;
       color: #dbe6f5;
     }
 
+    /* --- Hauptbereiche --- */
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 3rem auto;
-      padding: 0 1rem;
+      padding: 0 1.5rem;
     }
 
     h2 {
       color: var(--nordiq-blue);
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
       border-left: 5px solid var(--nordiq-accent);
-      padding-left: 10px;
-      font-size: 1.6rem;
+      padding-left: 12px;
+      font-size: 1.8rem;
     }
 
     .service-list {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.8rem;
     }
 
     .service {
       background: white;
       border-radius: 12px;
-      padding: 1.5rem;
+      padding: 2rem;
       box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-      transition: transform 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .service:hover {
       transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
     }
 
     .service h3 {
@@ -81,6 +92,31 @@
       margin-bottom: 0.5rem;
     }
 
+    /* --- Kontaktbereich --- */
+    .contact-box {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .contact-box a {
+      display: inline-block;
+      margin-top: 1rem;
+      background: var(--nordiq-blue);
+      color: white;
+      text-decoration: none;
+      padding: 0.8rem 1.4rem;
+      border-radius: 6px;
+      transition: background 0.2s ease;
+    }
+
+    .contact-box a:hover {
+      background: var(--nordiq-accent);
+    }
+
+    /* --- Footer --- */
     footer {
       background: var(--nordiq-blue);
       color: white;
@@ -98,10 +134,30 @@
     footer a:hover {
       text-decoration: underline;
     }
+
+    /* --- Responsives Layout --- */
+    @media (max-width: 700px) {
+      header {
+        padding: 4rem 1rem 3rem;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .service {
+        padding: 1.2rem;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
+    <!-- Platzhalter für dein Logo -->
+    <!-- Ersetze src durch dein eigenes Bild im Repo, z.B. /images/logo.png -->
+    <!-- <img src="logo.png" alt="NordiQ Logo" class="logo"> -->
+
     <h1>NordiQ Consulting</h1>
     <p>Klarheit aus dem Norden</p>
   </header>
@@ -111,31 +167,31 @@
     <div class="service-list">
       <div class="service">
         <h3>Maschinenbau</h3>
-        <p>Standardisierung, Modularisierung und Variantenmanagement für den Maschinenbau. 
-           Wir schaffen Struktur in Produktlandschaften und reduzieren Komplexität nachhaltig.</p>
+        <p>Standardisierung, Modularisierung und Variantenmanagement für den Maschinenbau.
+        Wir schaffen Struktur in Produktlandschaften und reduzieren Komplexität nachhaltig.</p>
       </div>
 
       <div class="service">
         <h3>Prozesstechnik & Anlagenbau</h3>
-        <p>Strukturierte Modularisierung und Variantenmanagement für komplexe Anlagen. 
-           Effizienzsteigerung durch klare Standards und Schnittstellen.</p>
+        <p>Strukturierte Modularisierung und Variantenmanagement für komplexe Anlagen.
+        Effizienzsteigerung durch klare Standards und Schnittstellen.</p>
       </div>
 
       <div class="service">
         <h3>KI-Systeme für Engineering & Struktur</h3>
-        <p>Entwicklung intelligenter KI-Systeme für Standardisierung, Modularisierung und Variantenmanagement 
-           in der Prozesstechnik – von der Datenanalyse bis zum Assistenzsystem.</p>
+        <p>Entwicklung intelligenter KI-Systeme für Standardisierung, Modularisierung und Variantenmanagement
+        in der Prozesstechnik – von der Datenanalyse bis zum Assistenzsystem.</p>
       </div>
     </div>
   </section>
 
   <section>
     <h2>Kontakt</h2>
-    <p>
-      Interesse an einer Zusammenarbeit?<br />
-      Schreiben Sie direkt an
-      <a href="mailto:benno-besler@outlook.com">benno-besler@outlook.com</a>.
-    </p>
+    <div class="contact-box">
+      <p>Interesse an einer Zusammenarbeit oder einem Austausch?</p>
+      <p>Schreiben Sie direkt an:</p>
+      <a href="mailto:benno-besler@outlook.com">benno-besler@outlook.com</a>
+    </div>
   </section>
 
   <footer>
